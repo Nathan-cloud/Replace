@@ -1397,6 +1397,18 @@ form .form-callback.error {
   margin: 0;
   line-height: 0;
 }
+#navbar-logo {
+  display: block;
+}
+#sticky-logo {
+  display: none;
+}
+.header.sticky.scrolling #sticky-logo {
+  display: block;
+}
+.header.sticky.scrolling #navbar-logo {
+  display: none;
+}
 
 /* ========================= */
 
