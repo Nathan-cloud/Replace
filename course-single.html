@@ -30,6 +30,7 @@
 
     <!-- THEME CSS -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/form.css">
 
     <!-- GOOGLE FONTS -->
     <link
@@ -118,8 +119,8 @@
             <!-- ===== BREADCRUMB ===== -->
             <ol
               class="breadcrumb"
-              itemscope
-              itemtype="http://schema.org/BreadcrumbList"
+        
+           
             >
               <li itemprop="itemListElement"><a href="index.html">Home</a></li>
               <li itemprop="itemListElement"><a href="#">Course Single</a></li>
@@ -158,7 +159,7 @@
           ><i class="fa fa-clock-o"></i> 51 minutes</span
         >
         <a class="podcast-meta-item" href="#"
-          ><i class="fa fa-tag"></i> Lifestyle</a
+          ><i class="fa fa-tag"></i> Truck</a
         >
         <a class="podcast-meta-item" href="#"
           ><i class="fa fa-download"></i> Download (MP3)</a
@@ -170,30 +171,30 @@
         <div class="container">
           <ul class="podcast-links-list">
             <li>
-              <a href="#" class="btn btn-success btn-sm">00:51</a>
+              <a href="#0" class="btn btn-success btn-sm">00:51</a>
               <span class="podcast-link-cite">Jump intro</span>
             </li>
             <li>
-              <a href="#" class="btn btn-success btn-sm">02:10</a>
-              <a href="#" target="_blank" class="podcast-link-cite"
+              <a href="#0" class="btn btn-success btn-sm">02:10</a>
+              <a href="#0" class="podcast-link-cite"
                 >The Envato Market</a
               >
             </li>
             <li>
-              <a href="#" class="btn btn-success btn-sm">05:25</a>
-              <a href="#" target="_blank" class="podcast-link-cite"
+              <a href="#0" class="btn btn-success btn-sm">05:25</a>
+              <a href="#0" class="podcast-link-cite"
                 >How to upload a Theme</a
               >
             </li>
             <li>
-              <a href="#" class="btn btn-success btn-sm">07:32</a>
+              <a href="#0" class="btn btn-success btn-sm">07:32</a>
               <span class="podcast-link-cite"
                 >A basic comment without link</span
               >
             </li>
             <li>
-              <a href="#" class="btn btn-success btn-sm">09:00</a>
-              <a href="#" target="_blank" class="podcast-link-cite"
+              <a href="#0" class="btn btn-success btn-sm">09:00</a>
+              <a href="#0"  class="podcast-link-cite"
                 >Learning from the basics</a
               >
             </li>
@@ -340,6 +341,100 @@
       </section>
     </footer>
 
+        <!-- =================================== -->
+    <!-- 			  Modal Section				 -->
+    <!-- =================================== -->
+    <div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+      <div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+        <ul class="cd-switcher">
+          <li><a href="#0">Sign in</a></li>
+          <li><a href="#0">New account</a></li>
+        </ul>
+
+    <div id="cd-login"> <!-- log in form -->
+      <form class="cd-form">
+        <p class="fieldset">
+          <label class="image-replace cd-email" for="signin-email">E-mail</label>
+          <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+          <span class="cd-error-message">Error message here!</span>
+        </p>
+
+        <p class="fieldset">
+          <label class="image-replace cd-password" for="signin-password">Password</label>
+          <input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
+          <a href="#0" class="hide-password">Hide</a>
+          <span class="cd-error-message">Error message here!</span>
+        </p>
+
+        <p class="fieldset">
+          <input type="checkbox" id="remember-me" checked>
+          <label for="remember-me">Remember me</label>
+        </p>
+
+        <p class="fieldset">
+          <input class="full-width" type="submit" value="Login">
+        </p>
+      </form>
+      
+      <p class="cd-form-bottom-message"><a href="#0">Forgot your password?</a></p>
+      <!-- <a href="#0" class="cd-close-form">Close</a> -->
+    </div> <!-- cd-login -->
+
+    <div id="cd-signup"> <!-- sign up form -->
+      <form class="cd-form">
+        <p class="fieldset">
+          <label class="image-replace cd-username" for="signup-username">Username</label>
+          <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+          <span class="cd-error-message">Error message here!</span>
+        </p>
+
+        <p class="fieldset">
+          <label class="image-replace cd-email" for="signup-email">E-mail</label>
+          <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+          <span class="cd-error-message">Error message here!</span>
+        </p>
+
+        <p class="fieldset">
+          <label class="image-replace cd-password" for="signup-password">Password</label>
+          <input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
+          <a href="#0" class="hide-password">Hide</a>
+          <span class="cd-error-message">Error message here!</span>
+        </p>
+
+        <p class="fieldset">
+          <input type="checkbox" id="accept-terms">
+          <label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
+        </p>
+
+        <p class="fieldset">
+          <input class="full-width has-padding" type="submit" value="Create account">
+        </p>
+      </form>
+
+      <!-- <a href="#0" class="cd-close-form">Close</a> -->
+    </div> <!-- cd-signup -->
+
+    <div id="cd-reset-password"> <!-- reset password form -->
+      <p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+
+      <form class="cd-form">
+        <p class="fieldset">
+          <label class="image-replace cd-email" for="reset-email">E-mail</label>
+          <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+          <span class="cd-error-message">Error message here!</span>
+        </p>
+
+        <p class="fieldset">
+          <input class="full-width has-padding" type="submit" value="Reset password">
+        </p>
+      </form>
+
+      <p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
+    </div> <!-- cd-reset-password -->
+    <a href="#0" class="cd-close-form">Close</a>
+  </div> <!-- cd-user-modal-container -->
+</div> <!-- cd-user-modal -->
+
     <!-- =================================== -->
     <!-- 			  SCRIPTS 				 -->
     <!-- =================================== -->
@@ -349,6 +444,7 @@
 
     <!-- BOOTSTRAP JS -->
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/form.js"></script>
 
     <!-- MEDIA ELEMENT -->
     <script src="assets/js/mediaelement-and-player.min.js"></script>
@@ -365,6 +461,4 @@
     <!-- THEME JS -->
     <script src="assets/js/main.js"></script>
   </body>
-
-  <!-- Mirrored from code.reidark.com.br/themes/soundcast/podcast.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Oct 2021 13:39:53 GMT -->
 </html>
